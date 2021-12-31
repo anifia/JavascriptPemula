@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lingkaran</title>
+</head>
+<body>
+    <input type="number" placeholder="Masukkan nilai jari-jari lingkaran (cm)" id="keliling">
+    <button onclick="lingkaran()">Hitung keliling lingkaran</button>
+    Hasil: <span id="hasilkeliling"></span>
+    <br>
+    <br>
+    <input type="number" placeholder="Masukkan nilai jari-jari lingkaran (cm)" id="luas">
+    <button onclick="lingkaran()">Hitung luas lingkaran</button>
+    Hasil: <span id="hasilluas"></span>
+
+    <script>
+        function lingkaran(){
+            document.getElementById("hasilkeliling").innerHTML = 3.14*2*parseFloat(keliling.value);
+            document.getElementById("hasilluas").innerHTML = 3.14*parseFloat(luas.value);
+        }
+    </script>
+</body>
+</html>
